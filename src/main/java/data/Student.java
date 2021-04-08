@@ -1,4 +1,4 @@
-// Honor Pledge:
+package data;// Honor Pledge:
 //
 // I pledge that I have neither given nor
 // received any help on this assignment.
@@ -15,6 +15,14 @@ public class Student {
     private double gpa;
     private String gender;
     private List<String> activities;
+
+    public Student(){
+
+    }
+
+    public Student(String name){
+        this.name = name;
+    }
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
         this.gradeLevel = gradeLevel;
@@ -65,7 +73,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "data.Student{" +
                 "name='" + name + '\'' +
                 ", gradeLevel=" + gradeLevel +
                 ", gpa=" + gpa +

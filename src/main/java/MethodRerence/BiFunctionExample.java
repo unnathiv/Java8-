@@ -1,4 +1,4 @@
-// Honor Pledge:
+package MethodRerence;// Honor Pledge:
 //
 // I pledge that I have neither given nor
 // received any help on this assignment.
@@ -6,6 +6,9 @@
 
 //amorampu
 
+
+import data.Student;
+import data.StudentDataBase;
 
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +18,7 @@ import java.util.function.Predicate;
 
 public class BiFunctionExample {
 
-    static BiFunction<List<Student>, Predicate<Student>, Map<String,Double>> biFunction = ((students,studentPredicate) ->{
+    static BiFunction<List<Student>, Predicate<Student>, Map<String,Double>> biFunction = ((students, studentPredicate) ->{
         Map<String, Double> studentGradeMap = new HashMap<>();
         students.forEach(student ->{
             if(studentPredicate.test(student)) {

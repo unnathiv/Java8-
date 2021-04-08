@@ -69,6 +69,37 @@ Using Method reference -
 Function<String,String> toUpperCaseMethodRerence = String::toUpperCase;
 
 
+####Constructor reference
+__________________________
+ClassName::new 
+
+
+#####Local Variables in Lambda Expression
+------------------------------------
+Labda has Restrictions using local variables- 
+1. We can't use same local varoable name as lambda paramertes or inside the lambda body
+2. Not allowed reassign a value to a local variable.
+
+Advantage - 
+1 . There is no restrictions on instance variables.(we can change the variable value)
+
+#####Effectively final
+___________________
+
+1.  Lambda's are allowed to use local variables but not allowed to modify it even though they are not declared final. This concept is 
+    called Effectively Final
+    
+    Pros - 
+    1. Easy to perform concurrenct operations
+    2. Promoted Functional programming and demotes the imperative style programming. 
+    
+####Streams
+------------
+1. 
+    
+
+
+
 
      
  
