@@ -95,8 +95,25 @@ ___________________
     
 ####Streams
 ------------
-1. 
-    
+1. Purpose of STream - Main purpose is to perform some operation on collections
+2. Even parallel operations are easy in multiple threads
+
+* Stream is a sequence of elements which can be cretaed out of a collections such as List or Arrays or any kind of 
+  I/O resources
+
+
+#####Methods 
+___________
+Map() - Convert one type to another. 
+flatMap() - Convert one type to another like map method. 
+       Used in context of stream where each element in the stream represents multiple elements. 
+       
+ Ex- Each and every element represent stream of multiple elements
+Distinct() - Return s stream with unique elements
+Count() - Returns a long with the total number of elements in the stream
+Sorted() - Sort the elements in the stream
+Filter() -  filter the elements in the stream
+reduce() - This is a terminal operation used to reduce the contents of a stream to a single value.
 
 
 
