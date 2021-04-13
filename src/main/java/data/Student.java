@@ -15,9 +15,18 @@ public class Student {
     private double gpa;
     private String gender;
     private List<String> activities;
-
+    private  int noteBook;
     public Student(){
 
+    }
+
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int noteBook) {
+        this.name = name;
+        this.gradeLevel = gradeLevel;
+        this.gpa = gpa;
+        this.gender = gender;
+        this.activities = activities;
+        this.noteBook = noteBook;
     }
 
     public Student(String name){
